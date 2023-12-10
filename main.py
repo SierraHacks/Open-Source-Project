@@ -16,7 +16,7 @@ class Rpg:
     def __init__(self,filename,name,loadfromfile=False):
         self.filename = filename
         if not loadfromfile:
-            history = f"This is the ancient world of Draconia. {name}'s village has been attacked by a dragon named Alex. To defend their village, they must journey into the forest and defeat the great beast.\nCompleted goals:\n"
+            history = f"This is the ancient world of Draconia. {name}'s village has been attacked by a dragon named Pranav. To defend their village, they must journey into the forest and defeat the great beast.\nCompleted goals:\n"
             self.data = {"name":name,"xp":0,
                          "goal": generate(f"generate the next goal for {name} with 0 xp based on {history}"),
                          "history":history,
@@ -43,10 +43,4 @@ while running:
     pygame.display.update()
 
     name = input("What is your character's name?")
-    text_color = (255, 255, 255)  # White color, you can adjust it as needed
-
-    rendered_text = space_mono_font.render(name, True, text_color)
-    
-    # Blit the rendered text onto the screen
-    screen.blit(rendered_text, (100, 100))
     print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Alex. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
