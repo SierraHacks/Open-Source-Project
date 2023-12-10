@@ -1,10 +1,17 @@
 import pygame, sys, json
 from gpt import generate
 pygame.init()
+font_path = "C:\Users\senthil\Downloads\Space_Mono.zip\SpaceMono-Regular.ttf"  # Replace with the actual path to your Space Mono font file
+font_size = 24  # Adjust the size as needed
+
+space_mono_font = pygame.font.Font(font_path, font_size)
+
+
 screen=pygame.display.pygame.display.set_mode([100, 100])
 bg = pygame.image.load("image0")
 running = True
 
+pygame.font.init
 class Rpg:
     def __init__(self,filename,name,loadfromfile=False):
         self.filename = filename
@@ -30,5 +37,16 @@ while running:
             pygame.quit()
             sys.exit()
     pygame.display.update()
+     # Blit the background image onto the screen
+    screen.blit(bg, (0, 0))
+
+    pygame.display.update()
+
     name = input("What is your character's name?")
+    text_color = (255, 255, 255)  # White color, you can adjust it as needed
+
+    rendered_text = space_mono_font.render(name, True, text_color)
+    
+    # Blit the rendered text onto the screen
+    screen.blit(rendered_text, (100, 100))
     print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Alex. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
