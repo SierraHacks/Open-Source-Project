@@ -31,4 +31,4 @@ while running:
             sys.exit()
     pygame.display.update()
     name = input("What is your character's name?")
-    print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Alex. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
+    print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Pranav. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
