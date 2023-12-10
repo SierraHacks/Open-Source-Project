@@ -7,7 +7,7 @@ running = True
 class Rpg:
     def __init__(self,filename,name,loadfromfile=False):
         self.filename = filename
-        if !loadfromfile:
+        if not loadfromfile:
             self.data = {"name":name,"xp":0,"goal":""}
         else:
             with open(filename, 'r') as openfile:
