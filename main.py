@@ -9,7 +9,7 @@ class Rpg:
     def __init__(self,filename,name,loadfromfile=False):
         self.filename = filename
         if not loadfromfile:
-            history = f"This is the ancient world of Draconia. {name}'s village has been attacked by a dragon named Alex. To defend their village, they must journey into the forest and defeat the great beast.\nCompleted goals:\n"
+            history = f"This is the ancient world of Draconia. {name}'s village has been attacked by a dragon named Pranav. To defend their village, they must journey into the forest and defeat the great beast.\nCompleted goals:\n"
             self.data = {"name":name,"xp":0,
                          "goal": generate(f"generate the next goal for {name} with 0 xp based on {history}"),
                          "history":history,
