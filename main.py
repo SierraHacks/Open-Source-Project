@@ -1,4 +1,5 @@
 import pygame, sys, json
+from gpt import generate
 pygame.init()
 screen=pygame.display.pygame.display.set_mode([100, 100])
 bg = pygame.image.load("image0")
