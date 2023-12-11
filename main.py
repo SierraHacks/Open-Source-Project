@@ -46,6 +46,15 @@ class Rpg:
         # Placeholder code, replace with actual code to generate monster characteristics
         self.data["monster"] = generate(f"generate characteristics for {self.data['monsname']}")
 
+    def encounterDragon(self):
+        dragon_name = generate(f"generate the name for the dragon")
+        dragon_characteristics = generate(f"generate characteristics for {dragon_name}'s dragon")
+        print(f"You encounter a mighty dragon named {dragon_name}!\nDragon Characteristics: {dragon_characteristics}")
+        
+        # Increase XP when the player encounters a dragon
+        self.data["xp"] += 50
+        print(f"You gained 50 XP! Total XP: {self.data['xp']}")
+
 # Create an instance of the Rpg class
 rpg_instance = Rpg("savefile.json", "PlayerName", loadfromfile=True)
 
@@ -75,5 +84,8 @@ while running:
     # Generate and print the monster name and characteristics
     rpg_instance.getMonster()
     print(f"A wild {rpg_instance.data['monsname']} appears!\nCharacteristics: {rpg_instance.data['monster']}")
+
+    # Simulate encountering a dragon
+    rpg_instance.encounterDragon()
 
     pygame.display.flip()
