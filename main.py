@@ -11,18 +11,9 @@ font_size = 24  # Adjust the size as needed
 
 space_mono_font = pygame.font.Font(font_path, font_size)
 
-<<<<<<< HEAD
-# Corrected the screen dimensions
-screen = pygame.display.set_mode([800, 600])
-
-# Load an image or provide a valid path to an image file
-bg = pygame.image.load("image0.jpg")  # Adjust the image file extension
-
-=======
 
 screen=pygame.display.pygame.display.set_mode([100, 100])
 bg = pygame.image.load("image0")
->>>>>>> 07bbf3780b4f9b8fc3a75cce69bfcdb670003300
 running = True
 
 pygame.font.init()  # Corrected the method call
@@ -76,26 +67,6 @@ while running:
     pygame.display.update()
 
     name = input("What is your character's name?")
-<<<<<<< HEAD
-
-    # Use the render_text function to render text
-    render_text(name, font_path, font_size, (255, 255, 255), (100, 100))
-
-    print("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Drakonir. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
-
-    # Generate and print the next goal
-    rpg_instance.getNextGoal()
-    print(f"Next goal: {rpg_instance.data['goal']}")
-
-    # Generate and print the monster name and characteristics
-    rpg_instance.getMonster()
-    print(f"A wild {rpg_instance.data['monsname']} appears!\nCharacteristics: {rpg_instance.data['monster']}")
-
-    # Simulate encountering a dragon
-    rpg_instance.encounterDragon()
-
-    pygame.display.flip()
-=======
     print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Drakonir. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
     XP = 0
     print ("You must defeat a Golem named Goro to venture into the forest. Navigate treacherous passages, decipher ancient runes to uncover the Golem's weakness, and prepare for a formidable battle. Evade its earth-shattering strikes, exploit its vulnerability, and triumph. You need 50 XP to defeat Goro.")
@@ -106,4 +77,3 @@ while running:
         print ("After training for months, you have defeated Arachno the Spider Queen, and can now enter the dragons cave itself. But are you ready? You need 150 XP to defeat the dragon.")
     if XP >= 150:
         print ("You enter the cave. The dragon loomed, scales aglow with fiery power. Its breath seared the air, but your agility kept you safe among ancient ruins. Sword in hand, you engaged in a fierce duel. Dodging claws, you struck where scales thinned. The dragon roared, wings thrashing, trying to unbalance you.With unwavering resolve, you seized an opening and drove your blade true. The dragon, defeated, fell with a thunderous crash, vanquished by your bravery and skill. But then, you see another dragon flying into the cave, this time an Ice Dragon. You need 300 XP to defeat the Ice Dragon.")
->>>>>>> 07bbf3780b4f9b8fc3a75cce69bfcdb670003300
