@@ -11,6 +11,7 @@ font_size = 24  # Adjust the size as needed
 
 space_mono_font = pygame.font.Font(font_path, font_size)
 
+
 # Corrected the screen dimensions
 screen = pygame.display.set_mode([800, 600])
 
@@ -71,11 +72,7 @@ while running:
     pygame.display.update()
 
     name = input("What is your character's name?")
-
-    # Use the render_text function to render text
-    render_text(name, font_path, font_size, (255, 255, 255), (100, 100))
-
-    print("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Drakonir. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
+    print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Drakonir. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
 
     # Generate and print the next goal
     rpg_instance.getNextGoal()
