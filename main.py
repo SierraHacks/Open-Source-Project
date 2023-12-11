@@ -6,6 +6,7 @@ font_size = 24  # Adjust the size as needed
 
 space_mono_font = pygame.font.Font(font_path, font_size)
 
+
 screen=pygame.display.pygame.display.set_mode([100, 100])
 bg = pygame.image.load("image0")
 running = True
@@ -43,3 +44,12 @@ while running:
 
     name = input("What is your character's name?")
     print ("Welcome to the ancient world of Draconia, " + name + ". Your village has been attacked by a dragon named Drakonir. To defend your village, you must journey into the forest and defeat the great beast. But you are weak. Can you level up in time?...")
+    XP = 0
+    print ("You must defeat a Golem named Goro to venture into the forest. Navigate treacherous passages, decipher ancient runes to uncover the Golem's weakness, and prepare for a formidable battle. Evade its earth-shattering strikes, exploit its vulnerability, and triumph. You need 50 XP to defeat Goro.")
+    if XP >= 50:
+        print ("Congratulations! You have defeated Goro the Golem and can now enter the forest. But you must journey into the tangled depths of the Forest, where Arachno, the spider queen's lair lies hidden amidst silken threads and shadowed groves. Navigate the labyrinthine paths, evade venomous traps, and overcome her arachnid minions to reach the heart of the Queen's domain. You need 100 XP to defeat Arachno")
+    
+    if XP >= 100:
+        print ("After training for months, you have defeated Arachno the Spider Queen, and can now enter the dragons cave itself. But are you ready? You need 150 XP to defeat the dragon.")
+    if XP >= 150:
+        print ("You enter the cave. The dragon loomed, scales aglow with fiery power. Its breath seared the air, but your agility kept you safe among ancient ruins. Sword in hand, you engaged in a fierce duel. Dodging claws, you struck where scales thinned. The dragon roared, wings thrashing, trying to unbalance you.With unwavering resolve, you seized an opening and drove your blade true. The dragon, defeated, fell with a thunderous crash, vanquished by your bravery and skill. But then, you see another dragon flying into the cave, this time an Ice Dragon. You need 300 XP to defeat the Ice Dragon.")
