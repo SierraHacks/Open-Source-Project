@@ -6,7 +6,6 @@ font_size = 24  # Adjust the size as needed
 
 space_mono_font = pygame.font.Font(font_path, font_size)
 
-
 screen=pygame.display.pygame.display.set_mode([100, 100])
 bg = pygame.image.load("image0")
 running = True
